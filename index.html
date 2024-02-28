@@ -4,28 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./scss/main.css" />
-    <link rel="icon" href="./assets/logo-askend.svg">
+    <link rel="icon" href="./assets/logo-askend.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <title>Ascend Analytics</title>
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!-- header -->
-    <header class="navbar">
-      <div class="navbar__container">
+    <!-- <header class="navbarr">
+      <div class="nav__container">
         <a href="#">
           <img src="./assets/logo-askend.svg" alt="logo" />
         </a>
-        <div class="navbar-menu__container">
-          <div class="navbar-menu">
-            <a href="#" class="navbar-menu__black">Home</a>
-            <a href="#">Company<i data-feather="chevron-down"></i></a>
-            <a href="#">Services<i data-feather="chevron-down"></i></a>
-            <a href="#">Industries<i data-feather="chevron-down"></i></a>
+        <div class="nav-menu__container">
+          <div class="nav-menu">
+            <a href="#" class="nav-menu__black nav-menu__link">Home</a>
+            <a href="#" class="nav-menu__link">Company<i data-feather="chevron-down"></i></a>
+            <a href="#" class="nav-menu__link">Services<i data-feather="chevron-down"></i></a>
+            <a href="#" class="nav-menu__link">Industries<i data-feather="chevron-down"></i></a>
           </div>
           <button class="button-white">Contact Us</button>
         </div>
+        <i data-feather="menu" class="menu-icon"></i>
       </div>
-    </header>
+    </header> -->
+
+    <nav class="navbar navbar-expand-lg navbarr">
+      <div class="container-fluid nav__container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo-askend.svg" alt="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Company </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">AI & ML</a></li>
+                <li><a class="dropdown-item" href="#">Business Intelligence</a></li>
+                <li><a class="dropdown-item" href="#">Data Analytics in Business</a></li>
+                <li><a class="dropdown-item" href="#">Predictive Analytics Consulting Services</a></li>
+                <li><a class="dropdown-item" href="#">Data Analytics Consulting Services</a></li>
+                <li><a class="dropdown-item" href="#">Business Analytics & Consulting Services</a></li>
+                <li><a class="dropdown-item" href="#">Advanced Analytics Consulting Services</a></li>
+                <li><a class="dropdown-item" href="#">Hyper-Personalised Marketing</a></li>
+                <li><a class="dropdown-item" href="#">Prescriptive Analytics Consulting</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">AI & ML</a></li>
+                <li><a class="dropdown-item" href="#">Business Intelligence</a></li>
+                <li><a class="dropdown-item" href="#">Data Analytics in Business</a></li>
+                <li><a class="dropdown-item" href="#">Predictive Analytics Consulting Services</a></li>
+                <li><a class="dropdown-item" href="#">Data Analytics Consulting Services</a></li>
+                <li><a class="dropdown-item" href="#">Business Analytics & Consulting Services</a></li>
+                <li><a class="dropdown-item" href="#">Advanced Analytics Consulting Services</a></li>
+                <li><a class="dropdown-item" href="#">Hyper-Personalised Marketing</a></li>
+                <li><a class="dropdown-item" href="#">Prescriptive Analytics Consulting</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Industries </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ed Tech Analytics Consulting</a></li>
+                <li><a class="dropdown-item" href="#">Health Tech Analytics</a></li>
+                <li><a class="dropdown-item" href="#">Manufacturing Analytics</a></li>
+                <li><a class="dropdown-item" href="#">Hospitality Analytics</a></li>
+                <li><a class="dropdown-item" href="#">Fintech Analytics</a></li>
+                <li><a class="dropdown-item" href="#">Argitech Analytics</a></li>
+                <li><a class="dropdown-item" href="#">Retail Analytics</a></li>
+                <li><a class="dropdown-item" href="#">Financial Data Analytics</a></li>
+              </ul>
+            </li>
+          </ul>
+          <button class="button-white" type="submit">Contact Us</button>
+        </div>
+      </div>
+    </nav>
 
     <!-- hero -->
     <section class="hero">
@@ -161,9 +223,72 @@
       </div>
     </section>
 
+    <!-- Footer -->
+    <section class="ft">
+      <div class="ft__container">
+        <div class="ft__top">
+          <div class="ft__top-left">
+            <a href="#"><img src="./assets/logo-footer-ascend.svg" alt="logo" /></a>
+            <p class="text-grey__smaller" style="color: #dee0e3">Speak to one of our experts today about what data can do for you.</p>
+          </div>
+          <div class="ft__top-right">
+            <div>
+              <p class="text-grey__extra-smaller">Company</p>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">About</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Impact</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Pricing</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Blog</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Case Study</a>
+            </div>
+            <div>
+              <p class="text-grey__extra-smaller">Services</p>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">AI & ML</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Business Intelligence</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Data Analytics in Business</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Predictive Analytics</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Data Analytics</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Business Analytics</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Advanced Analytics</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Personalized Marketing</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Prescriptive Analytics</a>
+            </div>
+            <div>
+              <p class="text-grey__extra-smaller">Industries</p>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Financial Services Data</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Retail Analytics</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Agritech Analytics</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Banking Data Analytics</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Hospitality Analytics</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Auto Analytics</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Healthcare Analytics</a>
+              <a href="#" class="text-grey__extra-smaller" style="color: #fff">Higher Education Analytics</a>
+            </div>
+          </div>
+        </div>
+        <div class="ft__bottom">
+          <span class="text-grey__extra-smaller" style="color: #DEE0E3;">©2023 Ascend Analytics. All rights reserved</span>
+          <div>
+            <a href="#">
+              <img src="./assets/phone-icon-ascend.svg" alt="phone-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/fb-icon-ascend.svg" alt="fb-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/twt-icon-ascend.svg" alt="twt-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/ig-icon-ascend.svg" alt="ig-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Feather Icon -->
     <script>
       feather.replace();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
