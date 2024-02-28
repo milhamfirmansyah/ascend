@@ -692,3 +692,31 @@ body {
     width: 100%;
   }
 }
+
+// Testimonial
+.testi {
+  width: 100%;
+  padding: 88px 0;
+}
+
+.testi__container {
+  max-width: 83.333%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testi__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 612px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .testi__top{
+    width: 100%;
+  }
+}
