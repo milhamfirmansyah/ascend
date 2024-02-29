@@ -787,3 +787,39 @@ body {
     padding-bottom: 64px;
   }
 }
+
+// services
+.services {
+  width: 100%;
+  padding: 88px 0;
+  background-color: #001126;
+}
+
+.services__container {
+  max-width: 83.333%;
+  margin: 0 auto;
+}
+
+.services__top div {
+  display: flex;
+  gap: 32px;
+}
+
+.services__top div h2{
+  flex: 6.4;
+}
+
+.services__top div p{
+  flex: 3.6;
+}
+
+@media screen and (max-width: 992px) {
+  .services__container {
+    max-width: 89.333%;
+  }
+
+  .services__top div {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
