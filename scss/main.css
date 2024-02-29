@@ -435,10 +435,9 @@ body {
 
 @media screen and (max-width: 1200px) {
   .process {
-    padding: 64px 32px;
+    padding: 64px 0 32px 0;
   }
   .process__container {
-    max-width: 89.333%;
     flex-direction: column-reverse;
   }
   .process__left-bottom {
@@ -446,6 +445,11 @@ body {
   }
   .process__right {
     width: 75%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .process__container {
+    max-width: 89.333% !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -641,7 +645,7 @@ body {
 }
 .testi {
   width: 100%;
-  padding: 88px 0;
+  padding: 88px 0 48px 0;
 }
 
 .testi__container {
@@ -664,4 +668,35 @@ body {
   .testi__top {
     width: 100%;
   }
+}
+.slider {
+  padding: 0 10% 88px 10%;
+}
+
+.slider__container {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.slider__card {
+  width: 378px;
+  height: 410px;
+  border: 1px solid #bfc3c9;
+  padding: 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__top img {
+  margin-bottom: 12px;
+}
+
+.card__bottom {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
