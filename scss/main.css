@@ -32,7 +32,6 @@ body {
 }
 .button-white:hover .rotate {
   transform: rotate(45deg);
-  transition: all 0.15s;
 }
 
 .button-yellow {
@@ -55,7 +54,6 @@ body {
 }
 .button-yellow:hover .rotate {
   transform: rotate(45deg);
-  transition: all 0.15s;
 }
 
 @media screen and (max-width: 576px) {
@@ -66,6 +64,10 @@ body {
     width: 100%;
   }
 }
+.rotate {
+  transition: all 0.15s;
+}
+
 .heading1 {
   font-weight: 400;
   font-size: 48px;
@@ -791,6 +793,7 @@ body {
 
 .services__icon {
   color: #fff;
+  transition: all 0.15s;
 }
 
 .services__card-heading {
@@ -811,7 +814,6 @@ body {
 }
 .services__card:hover .services__icon {
   transform: rotate(45deg);
-  transition: all 0.15s;
 }
 
 @media screen and (max-width: 1200px) {
