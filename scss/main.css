@@ -733,11 +733,14 @@ body {
   width: 100%;
   padding: 88px 0;
   background-color: #001126;
+  position: relative;
 }
 
 .services__container {
   max-width: 83.333%;
   margin: 0 auto;
+  position: relative;
+  z-index: 20;
 }
 
 .services__top div {
@@ -816,6 +819,18 @@ body {
   transform: rotate(45deg);
 }
 
+.services-pattern__top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.services-pattern__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 @media screen and (max-width: 1200px) {
   .services__bottom {
     grid-template-columns: 1fr 1fr 1fr;
@@ -850,5 +865,8 @@ body {
   .services__bottom {
     grid-template-columns: 1fr;
     grid-gap: 16px;
+  }
+  .services-pattern__top, .services-pattern__bottom {
+    display: none;
   }
 }
